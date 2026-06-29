@@ -157,17 +157,5 @@ VITE_USER_ROLE=role
 VITE_COOKIE_EXPIRES=1
 ```
 
----
-
-# Future Improvements
-
-* Google Authentication
-* Product Details Page
-* User Public Profiles
-* Task Details
-* Loading Skeletons
-* Notifications
-* Real-time Chat
-* Comments & Likes
 
 ---
