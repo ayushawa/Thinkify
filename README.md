@@ -1,136 +1,173 @@
 # Thinkify
 
-Thinkify is a vibrant space where people from diverse backgrounds and interests come together to engage in meaningful conversations, fostering an environment rich in idea exchange, knowledge sharing, and diverse experiences.
+A full-stack **MERN** application that provides a collaborative platform for users to share posts, manage tasks, and showcase products through a modern dashboard with secure authentication and role-based access control.
 
-# Preview
+---
 
-<img src="/preview.png">
+## Preview
 
+<p align="center">
+  <img src="preview.png" alt="Thinkify Preview" width="900"/>
+</p>
 
-# Requirements
+---
 
-[Install Node On Your Device](https://nodejs.org/)
+# Tech Stack
 
-# How to Run
+### Frontend
+
+* React.js
+* Vite
+* React Router
+* Tailwind CSS
+
+### Backend
+
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* JWT Authentication
+* Bcrypt
+
+---
+
+# Features
+
+## Authentication
+
+* User Registration
+* Secure Login
+* JWT Authentication
+* Role-Based Authorization
+* Password Encryption
+
+## User Dashboard
+
+* User Profile
+* Account Settings
+* Change Password
+* Sign Out
+
+## Admin Dashboard
+
+* User Management
+* Role Distribution Analytics
+* Monthly User Activity
+
+## Posts
+
+* Create Post
+* View Posts
+* Manage Personal Posts
+
+## Marketplace
+
+* Add Products
+* Manage Products
+* Product Listings
+
+## Task Management
+
+* Create Tasks
+* Update Task Status
+* Organize Daily Activities
+
+---
+
+# Project Structure
 
 ```
-git clone https://github.com/ayushawa/Thinkify.git
+Thinkify
+│
+├── client
+│   ├── components
+│   ├── pages
+│   ├── layouts
+│   ├── routes
+│   └── src
+│
+├── server
+│   ├── config
+│   ├── controller
+│   ├── middleware
+│   ├── models
+│   ├── routes
+│   └── uploads
+│
+└── README.md
+```
 
-# BACKEND
+---
+
+# Getting Started
+
+## Prerequisites
+
+* Node.js
+* MongoDB
+
+---
+
+# Installation
+
+```bash
+git clone https://github.com/ayushawa/Thinkify.git
+```
+
+### Backend
+
+```bash
 cd server
 npm install
 npx nodemon index.js
+```
 
-# FRONTEND
+### Frontend
+
+```bash
 cd ../client
 npm install
 npm run dev
 ```
 
+---
+
 # Environment Variables
 
-## Frontend
+## Backend (.env)
 
-```
-VITE_SERVER_ENDPOINT = https://thinkify-server.vercel.app:3000/api
-VITE_TOKEN_KEY = thinkify
-VITE_USER_ROLE = role
-VITE_COOKIE_EXPIRES = 1
-```
-
-## Backend
-
-```
-PORT = 3000
-DATABASE_URL = mongodb://localhost:27017/
-DATABASE_NAME = thinkify
-BCRYPT_GEN_SALT_NUMBER = 10
-JWT_SECRET_KEY = abcdefghijklmnopqrstuvwxyz
-COOKIE_EXPIRES = 5d
-COOKIE_KEY = thinkify
-UPLOAD_DIRECTORY = uploads
+```env
+PORT=3000
+DATABASE_URL=your_database_url
+DATABASE_NAME=thinkify
+JWT_SECRET_KEY=your_secret_key
+COOKIE_KEY=thinkify
+COOKIE_EXPIRES=5d
+BCRYPT_GEN_SALT_NUMBER=10
+UPLOAD_DIRECTORY=uploads
 ```
 
-# Features
+## Frontend (.env)
 
-## Admin
-
-- Profile
-  - Last Month User Activity
-  - Role Based User Distribution
-- Users Management
-- Sign Out
-
-## Student
-
-- Profile
-- Add Post
-- My Posts
-- Add Product
-- My Products
-- Task Manager
-- Setting
-  - Change Password
-- Sign Out
-
-# Contribution Ideas
-
-- Continue with Google signup/signin
-- Single Product Sell Page
-- View Task Details
-- View User Details(public)
-- Edit user, post, product
-- Loading View
-
-## Institution/Teacher
-
-- post(text, image)
-  - by admin/institution
-  - by teacher
-- assignments
-- poll
-- resource sharing
-- test
-
-### Design Idea
-
-```
-|----------------------------------------------------------------
-|                 |                                |  Analytics |
-|-----------------|                                |------------|
-|                 |          ----------            |  Teachers  |
-|-----------------|          | Create |            |  Students  |
-|   Institution   |          ----------            |  Courses   |
-|-----------------|                                |    Posts   |
-|                 |                                |    ....    |
-|-----------------|--------------------------------|------------|
+```env
+VITE_SERVER_ENDPOINT=your_backend_api
+VITE_TOKEN_KEY=thinkify
+VITE_USER_ROLE=role
+VITE_COOKIE_EXPIRES=1
 ```
 
-### Assignments
+---
 
-- title
-- description
-- subject
-- deadline
-- total marks
-- status
-- audience
+# Future Improvements
 
-### Polls
+* Google Authentication
+* Product Details Page
+* User Public Profiles
+* Task Details
+* Loading Skeletons
+* Notifications
+* Real-time Chat
+* Comments & Likes
 
-- title
-- description
-- type(singl, multiple)
-- options
-- deadline
-- status
-- anonymous member
-- audience
-
-### Resource
-
-- title
-- description
-- visibility
-- url
-- audience
+---
