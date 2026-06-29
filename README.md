@@ -77,7 +77,7 @@ Thinkify is a full-stack MERN application for managing posts, products, and task
 
 # Project Structure
 
-```
+```text
 Thinkify
 │
 ├── client
@@ -97,6 +97,20 @@ Thinkify
 │
 └── README.md
 ```
+
+---
+
+# Live Demo
+
+### Frontend
+
+https://thinkify-two.vercel.app
+
+### Backend API
+
+https://thinkify-backend-hw9s.onrender.com
+
+> **Note:** The backend is hosted on Render's free tier. The first request after inactivity may take around 30–60 seconds while the service wakes up.
 
 ---
 
@@ -157,5 +171,31 @@ VITE_USER_ROLE=role
 VITE_COOKIE_EXPIRES=1
 ```
 
+---
+
+# Future Improvements
+
+* Real-time notifications using WebSockets
+* Email verification and password reset
+* Product search and advanced filtering
+* User profile image uploads
+* Dark mode
+* Pagination and infinite scrolling
+* Docker support
+* CI/CD pipeline with GitHub Actions
+* Unit and integration testing
+* Performance optimization and caching
 
 ---
+
+# License
+
+This project is developed for educational and portfolio purposes.
+
+---
+
+## Author
+
+**Ayush Awasthi**
+
+If you found this project helpful, consider giving it a ⭐ on GitHub.
