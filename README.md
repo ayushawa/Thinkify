@@ -1,6 +1,6 @@
 # Thinkify
 
-A full-stack **MERN** application that provides a collaborative platform for users to share posts, manage tasks, and showcase products through a modern dashboard with secure authentication and role-based access control.
+Thinkify is a full-stack MERN application for managing posts, products, and tasks through a secure role-based dashboard built with React, Node.js, Express, and MongoDB.
 
 ---
 
